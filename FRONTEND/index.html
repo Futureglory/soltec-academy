@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FACEBOOK</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: whitesmoke;
+            }
+            .header{
+                display: flex;
+              
+                align-items: center;
+                padding: 10px;
+                background-color: white;
+                color: #0000;
+                position:sticky ;
+                top: 0;
+                z-index: 1000;
+            }
+            .leftSection{
+                padding-left: 5px;
+                display:flex;
+                align-items: center;
+               
+            }
+       
+            .searchBar{
+                display: flex;
+                background-color: lightgrey;
+                padding-left: 10px;
+                width: 200px;
+                height: 50px;
+                border: lightgrey;
+                border-radius: 50px;
+
+            }
+            .searchBar input{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                height: 50px;
+            }
+            .centreSection{
+                display: flex;
+               
+                margin-left: 10%;
+            }
+            .centreSection img{
+                padding-left: 40px;
+            }
+            
+            .rightSection{
+                display: flex;
+                margin-left: 25%;
+            }
+            .rightSection img{
+                height: 25px;
+                width: 25px;
+                padding-right: 10px;
+            }
+            .rightSection span{
+                border: grey;
+                background-color: grey;
+                margin-right: 5px;        
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 50%;
+                border-top-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                align-items: center;
+               }
+               #section{
+               margin: 25px;
+                align-content: center;
+                display: flex;
+                margin-left: 0px;
+                margin-right: 50px;
+               }
+               #leftSection{
+                background-color: dark whitesmoke;
+                padding-top: 0px;
+                padding-left: 0px;
+                padding-bottom: 10px;
+                padding-right: 300px;
+                margin-top: 10pxpx;
+                margin-left: 0px;
+               }
+               #center{
+                background-color: white;
+                padding: 100px;
+                width: 100px;
+                height: 50px;
+                padding-right: 200px;
+                margin-right: 100px;
+                padding-bottom: 5px;
+                padding-top: 10px;
+                border-radius: 10px;
+               }
+               #rightSection{
+                background-color:whitesmoke;
+                padding: 200px;
+                padding-right: 250px;
+               }
+               #leftSection img{
+                width: 30px;
+                height: 30px;
+                margin: 20px;
+                display:flow-root;
+                padding-top: 40px;
+                margin-bottom: 40px;
+               }
+               .text{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+               }
+               .text img{
+                width: 30px;
+                height: 30px;
+               }
+               .text h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                font-weight: lighter;
+                padding-top: 20px;
+               }
+               .text2{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .text2 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text2 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                padding-top: 20px;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .memo{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .memo img{
+                width: 30px;
+                height: 30px;
+               }
+               .memo h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                margin-right: 5px;
+                font-weight: lighter;
+                padding-top: 20px;
+               }
+               .text3{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .text3 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text3 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text4{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .text4 img{
+                width: 30px;
+                height: 30px;
+                margin-bottom: 10px;
+               }
+               .text4 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text5{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top:  30px;
+                padding-top: 20px;
+               }
+               .text5 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text5 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text6{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .text6 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text6 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text7{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .text7 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text7 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                padding-top: 20px;
+                display:flex;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .text8{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                padding-top: 20px;
+               }
+               .text8 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text8 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                padding-top: 20px;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .text9{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                padding-top: 20px;
+               }
+               .text9 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text9 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                padding-top: 20px;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .text10{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+               }
+               .text10 img{
+                width: 30px;
+                height: 30px;
+                padding-left: 3px;
+               }
+               .text10 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+                padding-left: 5px;
+               }
+               .text11{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                height: 5px;
+                padding-top: 20px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+               }
+               .text11 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text11 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text12{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-top: 30px;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                padding-top: 20px;
+                margin-right: 10px;
+               }
+               .text12 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text12 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text13{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                padding-top: 20px;
+               }
+               .text13 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text13 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                padding-top: 20px;
+                display:flex;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .text14{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                padding-top: 20px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+               }
+               .text14 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text14 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                padding-top: 20px;
+                display:flex;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .text15{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                padding-top: 20px;
+                margin-right: 10px;
+               }
+               .text15 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text15 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+               }
+               .text16{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                padding-top: 20px;
+               }
+               .text16 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text16 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                padding-top: 20px;
+                display:flex;
+                margin-right: 5px;
+                font-weight: lighter;
+                padding-left: 5px;
+               }
+               .text17{
+                padding-right: 20px;
+                width: 5px;
+                margin-top: 30px;
+                padding-top: 20px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+               }
+               .text17 img{
+                width: 30px;
+                height: 30px;
+               }
+               .text17 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                padding-top: 20px;
+                display:flex;
+                margin-right: 5px;
+                font-weight: lighter;
+               }
+               .text18{
+                padding-right: 20px;
+                width: 5px;
+                height: 5px;
+                display: flex;
+                margin-bottom: 5px;
+                padding-left: 0px;
+                align-items: center;
+                margin-right: 10px;
+                margin-top: 30px;
+                padding-top: 20px;
+                margin-left: 0px;
+               }
+               .text18 img{
+                width: 30px;
+                height: 30px;
+                padding-left: 0px;
+               }
+               .text18 h1{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:large;
+                display:flex;
+                margin-right: 5px;
+                padding-top: 20px;
+                font-weight: lighter;
+                padding-left: 5px;
+               }
+               .thought{
+                align-items:flex-start;
+                display: flex;
+                padding-left: 0px;
+                padding-top: 0px;
+               }
+               .thought img{
+                width: 50px;
+                height: 50px;
+                padding-left: 0px;
+                margin-left: 0px;
+               }
+               .thought input{
+                border-radius: 10px;
+                background-color: whitesmoke;
+                color: gray;
+               }
+               .notification{
+                padding: 10px;
+                position: relative;
+                color: white;
+                font-size: 8px;
+                width: 3px;
+                height:auto;
+                background-color: red;
+               }
+        </style>
+    </head>
+    <body>
+<div class="header">
+    <div class="leftSection">
+        <img src="./asssets/facebook.png" alt="facebook logo" style="width: 50px; height: auto;" />
+        <span class="searchBar">
+            <img src="./asssets/search.svg" alt="search" style="width: 30px; height: auto;"/>
+            <input type="text" placeholder="search facebook" />
+        
+     </span>
+        
+    </div>
+    <div class="centreSection">
+        <img src="./asssets/home_738822.png" alt="home" style="width: 30px; height: auto;"/>
+        <img src="./asssets/device_15413159.png" alt="video" style="width: 30px; height: auto;"/>
+        <img src="./asssets/store_17383558.png" alt="marketplace" style="width: 30px; height: auto;"/>
+        <img src="./asssets/group.svg" alt="group" style="width: 30px; height: auto;"/>
+        <img src="./asssets/game.svg" alt="game" style="width: 30px; height: auto;"/>
+    </div>
+    <div class="rightSection">
+        <a>
+            <span class="notification" style="background-color: red;">3</span>
+            <span>
+                <img src="./asssets/menu.svg" alt="menu"/>
+            </span>
+        </a>
+       <a>
+         <span class="notification" style="background-color: red;">10</span>
+         <span>
+            <img src="./asssets/message.svg" alt="message"/>
+            </span>
+       </a>
+        <a>
+            <span class="notification" style="background-color: red;">+99</span>
+            <span>
+                <img src="./asssets/notification.svg" alt="notification"/>
+                </span>
+        </a>
+       <a>
+        <span class="notification" style="background-color: red;">1</span>
+        <span>
+            <img src="./asssets/account.svg" alt="notification"/>
+            </span>
+       </a>
+    </div>
+</div>
+<div id="section">
+    <div id="leftSection">
+        <span class="text">
+            <img src="./asssets/account.svg" alt="account"/> 
+            <h1>Sherry </h1>
+            <h1> Robert</h1>
+        </span>
+        <span class="text2">
+            <img src="./asssets/friends.svg" alt="friends"/>
+            <h1>Friends</h1>
+        </span>
+        <span class="memo">
+            <img src="./asssets/memo.jfif" alt="memories"/>
+            <h1>Memories</h1>
+        </span>
+        <span class="text3">
+            <img src="./asssets/saved.svg" alt="saved"/>
+            <h1>Saved</h1>
+        </span>
+        <span class="text4">
+            <img src="./asssets/group.svg" alt="group"/>
+            <h1>Group</h1>
+        </span>
+        <span class="text5">
+            <img src="./asssets/device_15413159.png" alt="video"/>
+            <h1>Video</h1>
+        </span>
+        <span class="text6">
+            <img src="./asssets/store_17383558.png" alt="marketplace"/>
+            <h1>Marketplace</h1>
+        </span>
+        <span class="text7">
+            <img src="./asssets/portfolio-website.svg" alt="feeds"/>
+            <h1>Feeds</h1>
+        </span>
+        <span class="text8">
+            <img src="./asssets/events.svg" alt="events"/>
+            <h1>Event</h1>
+        </span>
+       <span class="text9">
+         <img src="./asssets/online-ads.svg" alt="Ads Manager"/>
+         <h1>Ads </h1>
+         <h1>Manager</h1>
+       </span>
+       <span class="text10">
+         <img src="./asssets/flower.svg" alt="climate science center"/>
+         <h1>Climate
+         <h1>Science </h1>
+         <h1>Center</h1>
+        </span>
+        <span class="text11">
+            <img src="./asssets/heart.svg" alt="fundraisers"/>
+            <h1>Fundraiser</h1>
+        </span>
+        <span class="text12">
+            <img src="./asssets/joystick.svg" alt="Gaming video"/>
+            <h1>Gaming </h1>
+                <h1>Video</h1>
+        </span>
+        <span class="text13">
+            <img src="./asssets/messenger (1).svg" alt="messenger"/>
+            <h1>Messenger</h1>
+        </span>
+        <span class="text14">
+            <img src="./asssets/messenger.svg" alt="messenger kids"/>
+            <h1>Messenger </h1>
+            <h1>Kids</h1>
+        </span>
+       <span class="text15">
+        <img src="./asssets/payment.svg" alt="order and payments"/>
+         <h1> Order </h1>
+         <h1>and</h1>
+         <h1>payments</h1>
+       </span>
+       <span class="text16">
+         <img src="./asssets/flag.svg" alt="pages"/>
+         <h1>Pages</h1>
+       </span>
+       <span class="text17">
+         <img src="./asssets/google-play-games.svg" alt="game"/>
+         <h1> play</h1>
+         <h1> Games</h1>
+       </span>
+       <span class="text18">
+         <img src="./asssets/image.svg" alt="recents"/>
+         <h1>Recent</h1>
+         <h1>ad</h1>
+         <h1>activity</h1>
+       </span>
+    </div>
+    <div id="center">
+        <img src="./asssets/account.svg" alt="profile"/>
+        <input type="text" placeholder="What's on your mind, Sherry?"/>
+    </div>
+    <div id="rightSection">
+
+    </div>
+</div>
+    
+    </body>
+</html>
